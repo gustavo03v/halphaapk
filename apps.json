@@ -1,0 +1,12 @@
+[
+    {
+        "name": "HalphaAPK",
+        "description": "Um aplicativo incrível!",
+        "downloadUrl": "https://example.com/app1.apk"
+    },
+    {
+        "name": "Meu App 2",
+        "description": "Outro aplicativo incrível!",
+        "downloadUrl": "https://example.com/app2.apk"
+    }
+]
