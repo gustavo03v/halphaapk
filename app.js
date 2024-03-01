@@ -1,20 +1,7 @@
 // app.js
-document.addEventListener("DOMContentLoaded", () => {
-    const appList = document.getElementById("app-list");
-
-    // Fetch app data from apps.json
-    fetch("apps.json")
-        .then(response => response.json())
-        .then(apps => {
-            apps.forEach(app => {
-                const appItem = document.createElement("div");
-                appItem.innerHTML = `
-                    <h2>${app.name}</h2>
-                    <p>${app.description}</p>
-                    <a href="${app.downloadUrl}" download>Download</a>
-                `;
-                appList.appendChild(appItem);
-            });
-        })
-        .catch(error => console.error("Error fetching app data:", error));
-});
+function shortenLink() {
+    const originalLink = document.getElementById("original-link").value;
+    // Aqui você pode implementar a lógica de encurtamento do link (por exemplo, usando um serviço como Bitly ou TinyURL)
+    const shortenedLink = "https://seu-site.com/" + Math.random().toString(36).substring(7);
+    document.getElementById("shortened-link").textContent = shortenedLink;
+}
